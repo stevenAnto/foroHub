@@ -78,7 +78,8 @@ public class TopicoController {
             topicoUpdate.setTitulo(topicoRegistroDTO.titulo());
             topicoUpdate.setFechaCracion(topicoRegistroDTO.fechaCracion());
             topicoUpdate.setStatus(topicoRegistroDTO.status());
-            return  new ResponseEntity<>(topicoToUpdate.get(),HttpStatus.OK);
+            topicoRespository.save(topicoUpdate);
+            return  new ResponseEntity<>(topicoRegistroDTO,HttpStatus.OK);
         }
         return new ResponseEntity<>("No encontrado",HttpStatus.NOT_FOUND);
     }

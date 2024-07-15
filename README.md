@@ -16,10 +16,7 @@ En este proyecto, desarrollamos ForoHub, una API REST que replica el funcionamie
 Concluido
 
 ## Funcionalidades de la aplicación y demostración
-### Crear un nuevo tópico en el foro
-```http
-POST /topicos
-```
+
 ### Crear un nuevo tópico en el foro
 ```http
 POST /topicos
@@ -55,7 +52,7 @@ Se implementa autenticación y autorización utilizando JWT (JSON Web Token) par
 
 ### Acceso al proyecto
 El código fuente está disponible en el repositorio de GitHub:
-[Repositorio ForoHub](https://github.com/tu-usuario/forohub)
+[Repositorio ForoHub](https://github.com/stevenAnto/foroHub.git)
 
 Para clonar el repositorio, ejecuta el siguiente comando:
 ```bash
@@ -68,9 +65,10 @@ Para configurar el entorno de desarrollo, sigue las instrucciones detalladas en 
 - Java 17
 - Spring Boot 3.2.3
 - Spring Data JPA
-- PostgreSQL
+- Mysql
 - JWT (JSON Web Token) para autenticación
 - Maven
+- Spring Security
 
 ### Desarrollador del proyecto
 Esteven Antonio Calcina Puma

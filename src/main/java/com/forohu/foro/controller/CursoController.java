@@ -19,7 +19,7 @@ public class CursoController {
     public ResponseEntity<?> crearCurso(@RequestBody @Valid CursoRegistroDTO cursoRegistroDTO){
         Curso curso = new Curso(cursoRegistroDTO);
         cursoRepository.save(curso);
-        return  new ResponseEntity<>(cursoRegistroDTO, HttpStatus.CREATED);
+        return  new ResponseEntity<>(curso, HttpStatus.CREATED);
     }
     @GetMapping
     public ResponseEntity<?> getAllCursos(){

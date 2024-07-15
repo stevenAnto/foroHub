@@ -20,9 +20,13 @@ public class Perfil {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    @Column(name="nombre_perfil",unique = true)
     private String nombrePerfil;
     @JsonIgnore
     @OneToMany(mappedBy = "perfil")
     List<Usuario> usuarioList;
 
+    public Perfil(PerfilRegistroDTO perfilRegistroDTO) {
+        this.nombrePerfil=perfilRegistroDTO.nombrePerfil();
+    }
 }

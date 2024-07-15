@@ -4,10 +4,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.forohu.foro.domain.respuesta.Respuesta;
 import com.forohu.foro.domain.topico.Topico;
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.EqualsAndHashCode;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
+import lombok.*;
 import com.forohu.foro.domain.perfil.Perfil;
 
 import java.util.List;
@@ -15,6 +12,7 @@ import java.util.List;
 @Table(name = "usuarios")
 @Entity(name = "Usuario")
 @Getter
+@Setter
 @NoArgsConstructor
 @AllArgsConstructor
 @EqualsAndHashCode(of = "id")
@@ -38,7 +36,6 @@ public class Usuario {
         this.nombre=usuarioRegistroDTO.nombre();
         this.correoElectronico=usuarioRegistroDTO.correoElectronico();
         this.contrasenia=usuarioRegistroDTO.contrasenia();
-
     }
 
 }

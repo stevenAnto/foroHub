@@ -1,6 +1,7 @@
 package com.forohu.foro.domain.curso;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.forohu.foro.domain.perfil.PerfilRepository;
 import com.forohu.foro.domain.topico.Topico;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -19,6 +20,7 @@ public class Curso {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    @Column(unique = true)
     private String nombreCurso;
     private String categoria;
     @JsonIgnore

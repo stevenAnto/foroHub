@@ -6,6 +6,6 @@ import com.forohu.foro.domain.perfil.Perfil;
 import java.util.List;
 
 public record UsuarioRegistroDTO(
-        String nombre, String correoElectronico, String contrasenia, List<Perfil> perfiles, Curso curso
+        String nombre, String correoElectronico, String contrasenia,  Long perfil_id
 ) {
 }

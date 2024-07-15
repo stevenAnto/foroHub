@@ -60,6 +60,8 @@ git clone https://github.com/tu-usuario/forohub.git
 ```
 
 Para configurar el entorno de desarrollo, sigue las instrucciones detalladas en el archivo README.md del repositorio.
+### Video 
+[![Video Demo]()](https://youtu.be/crFYnm6vKsQ)
 
 ### Tecnologías utilizadas
 - Java 17
